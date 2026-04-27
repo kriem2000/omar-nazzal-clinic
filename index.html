@@ -381,16 +381,6 @@
         outline-offset: 3px;
       }
 
-      .action.primary {
-        min-height: 106px;
-        color: var(--paper);
-        border-color: rgba(216, 173, 85, 0.36);
-        background:
-          linear-gradient(135deg, rgba(216, 173, 85, 0.18), rgba(63, 125, 119, 0.12)),
-          linear-gradient(90deg, #151713, #2a2d22);
-        box-shadow: 0 22px 52px rgba(0, 0, 0, 0.16), 0 18px 44px rgba(18, 140, 84, 0.13);
-      }
-
       .action-icon {
         width: 52px;
         height: 52px;
@@ -402,15 +392,15 @@
         box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2), 0 12px 24px rgba(0, 0, 0, 0.14);
       }
 
-      .primary .action-icon {
-        width: 58px;
-        height: 58px;
-      }
-
       .action-icon svg {
         width: 24px;
         height: 24px;
         stroke-width: 2;
+      }
+
+      .whatsapp .action-icon svg {
+        width: 27px;
+        height: 27px;
       }
 
       .action-copy {
@@ -426,19 +416,11 @@
         font-weight: 900;
       }
 
-      .primary .action-copy strong {
-        font-size: 1.24rem;
-      }
-
       .action-copy span {
         color: var(--muted);
         font-size: 0.92rem;
         line-height: 1.5;
         overflow-wrap: anywhere;
-      }
-
-      .primary .action-copy span {
-        color: rgba(246, 237, 220, 0.74);
       }
 
       .action-copy span[dir="ltr"] {
@@ -455,12 +437,6 @@
         color: var(--brass-deep);
         background: rgba(255, 250, 240, 0.74);
         line-height: 1;
-      }
-
-      .primary .action-arrow {
-        color: var(--brass);
-        border-color: rgba(216, 173, 85, 0.22);
-        background: rgba(255, 250, 240, 0.08);
       }
 
       .whatsapp {
@@ -613,16 +589,14 @@
           font-size: 0.92rem;
         }
 
-        .action,
-        .action.primary {
+        .action {
           min-height: 78px;
           grid-template-columns: 50px minmax(0, 1fr) 30px;
           gap: 12px;
           padding: 12px;
         }
 
-        .action-icon,
-        .primary .action-icon {
+        .action-icon {
           width: 48px;
           height: 48px;
         }
@@ -632,8 +606,7 @@
           height: 22px;
         }
 
-        .action-copy strong,
-        .primary .action-copy strong {
+        .action-copy strong {
           font-size: 1.06rem;
         }
 
@@ -660,8 +633,7 @@
           width: min(100% - 16px, 360px);
         }
 
-        .action,
-        .action.primary {
+        .action {
           grid-template-columns: 46px minmax(0, 1fr);
         }
 
@@ -723,15 +695,18 @@
 
           <nav class="actions" aria-label="روابط التواصل">
             <a
-              class="action primary whatsapp"
+              class="action whatsapp"
               href="https://wa.me/message/AEKRNZCFLV37H1"
               target="_blank"
               rel="noopener noreferrer"
             >
               <span class="action-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-                  <path d="M20 11.5a8.4 8.4 0 0 1-12.5 7.3L4 20l1.2-3.4A8.4 8.4 0 1 1 20 11.5Z"></path>
-                  <path d="M8.8 8.3c.2-.5.4-.5.7-.5h.5c.2 0 .5.1.6.4l.7 1.6c.1.3.1.5-.1.7l-.5.6c.8 1.4 1.8 2.3 3.2 3.1l.7-.8c.2-.2.4-.3.7-.2l1.5.7c.3.1.4.4.4.7v.4c0 .4-.2.8-.5 1-1 .5-3.5.2-5.8-2.1-2.4-2.4-2.7-4.9-2.1-5.6Z"></path>
+                <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16 3.6C9.1 3.6 3.5 9.1 3.5 15.9c0 2.2.6 4.4 1.7 6.3l-1.8 6.5 6.7-1.7c1.8 1 3.8 1.5 5.9 1.5 6.9 0 12.5-5.5 12.5-12.4C28.5 9.2 22.9 3.6 16 3.6Zm0 22.4c-1.8 0-3.6-.5-5.2-1.4l-.4-.2-3.9 1 1-3.8-.3-.4c-1-1.6-1.5-3.4-1.5-5.3 0-5.6 4.6-10.1 10.3-10.1s10.3 4.5 10.3 10.1S21.7 26 16 26Zm5.9-7.5c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8 0 1.6 1.2 3.2 1.4 3.4.2.2 2.4 3.7 5.8 5.1.8.3 1.5.5 2 .7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.2-.3-.5-.4-.8-.5Z"
+                  ></path>
                 </svg>
               </span>
               <span class="action-copy">
