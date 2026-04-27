@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>د. عمر أحمد نزال | روابط العيادة</title>
+    <meta
+      name="description"
+      content="روابط التواصل الرسمية لد. عمر أحمد نزال: واتساب، الموقع على خرائط Google، إنستغرام، وفيسبوك."
+    >
+    <meta name="theme-color" content="#10120f">
+    <meta property="og:title" content="د. عمر أحمد نزال | روابط العيادة">
+    <meta
+      property="og:description"
+      content="واتساب، خرائط Google، إنستغرام، وفيسبوك في صفحة واحدة."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/logo-main.jpg">
+    <link rel="icon" href="assets/brand-mark.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/logo-main.jpg" as="image">
+    <style>
+      :root {
+        color-scheme: dark;
+        --night: #10120f;
+        --charcoal: #181a15;
+        --graphite: #262820;
+        --brass: #d8ad55;
+        --deep-brass: #9a6c23;
+        --champagne: #f5ead2;
+        --paper: #fffaf0;
+        --stone: #d9d0be;
+        --moss: #64735f;
+        --clinic-teal: #3f7d77;
+        --ink: #171915;
+        --muted: #736b5d;
+        --white-line: rgba(255, 250, 240, 0.14);
+        --gold-line: rgba(216, 173, 85, 0.34);
+        --shadow: 0 30px 80px rgba(0, 0, 0, 0.38);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        min-height: 100%;
+        background: var(--night);
+      }
+
+      body {
+        min-height: 100svh;
+        margin: 0;
+        overflow-x: hidden;
+        font-family: "SF Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
+        color: var(--champagne);
+        background:
+          linear-gradient(118deg, rgba(16, 18, 15, 0.98) 0%, rgba(16, 18, 15, 0.98) 54%, rgba(245, 234, 210, 0.98) 54.15%, rgba(255, 250, 240, 0.98) 100%),
+          var(--night);
+      }
+
+      body::before {
+        position: fixed;
+        inset: 0;
+        z-index: -2;
+        content: "";
+        background:
+          url("assets/brand-lines.svg"),
+          linear-gradient(90deg, rgba(216, 173, 85, 0.08) 0 1px, transparent 1px 100%),
+          linear-gradient(0deg, rgba(216, 173, 85, 0.05) 0 1px, transparent 1px 100%),
+          url("assets/logo-shapes.jpg");
+        background-size: min(760px, 88vw) auto, 62px 62px, 62px 62px, min(980px, 120vw) auto;
+        background-position: -130px 24%, center, center, 100% 50%;
+        background-repeat: no-repeat, repeat, repeat, no-repeat;
+        opacity: 0.18;
+      }
+
+      body::after {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        content: "";
+        background:
+          linear-gradient(180deg, rgba(255, 250, 240, 0.08), transparent 28%, rgba(16, 18, 15, 0.2) 100%),
+          repeating-linear-gradient(105deg, rgba(255, 250, 240, 0.03) 0 1px, transparent 1px 9px);
+        pointer-events: none;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .experience {
+        width: min(1180px, calc(100% - 36px));
+        min-height: 100svh;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: minmax(0, 1.06fr) minmax(360px, 0.94fr);
+        gap: clamp(32px, 6vw, 78px);
+        align-items: center;
+        padding-block: clamp(34px, 6vw, 76px);
+      }
+
+      .brand-area {
+        display: grid;
+        gap: clamp(22px, 3vw, 34px);
+        align-content: center;
+      }
+
+      .brand-stage {
+        position: relative;
+        width: min(100%, 570px);
+        overflow: hidden;
+        border: 1px solid var(--gold-line);
+        border-radius: 8px;
+        background:
+          linear-gradient(135deg, rgba(255, 250, 240, 0.08), transparent 40%),
+          rgba(24, 26, 21, 0.82);
+        box-shadow: var(--shadow);
+      }
+
+      .brand-stage::before {
+        position: absolute;
+        inset: 10px;
+        content: "";
+        border: 1px solid rgba(255, 250, 240, 0.1);
+        border-radius: 6px;
+        pointer-events: none;
+      }
+
+      .brand-stage::after {
+        position: absolute;
+        inset-inline: 18px;
+        bottom: 16px;
+        height: 2px;
+        content: "";
+        background: linear-gradient(90deg, transparent, rgba(216, 173, 85, 0.9), rgba(63, 125, 119, 0.72), transparent);
+      }
+
+      .brand-logo {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1200 / 769;
+        object-fit: cover;
+      }
+
+      .identity {
+        width: min(100%, 570px);
+        display: grid;
+        gap: 12px;
+      }
+
+      .eyebrow {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: rgba(245, 234, 210, 0.78);
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        width: 42px;
+        height: 1px;
+        content: "";
+        background: var(--brass);
+      }
+
+      h1 {
+        margin: 0;
+        color: var(--paper);
+        font-size: 3.85rem;
+        line-height: 1.05;
+        font-weight: 900;
+        text-wrap: balance;
+      }
+
+      .latin-name {
+        margin: 0;
+        direction: ltr;
+        color: #f0cd83;
+        font-size: 1.16rem;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .specialty {
+        margin: 0;
+        max-width: 36rem;
+        color: rgba(245, 234, 210, 0.82);
+        font-size: 1.08rem;
+        line-height: 1.8;
+      }
+
+      .contact-area {
+        position: relative;
+        display: grid;
+        align-content: center;
+      }
+
+      .contact-area::before {
+        position: absolute;
+        inset: -24px -20px auto auto;
+        width: 160px;
+        height: 160px;
+        content: "";
+        border-block-start: 1px solid rgba(216, 173, 85, 0.44);
+        border-inline-end: 1px solid rgba(216, 173, 85, 0.44);
+        pointer-events: none;
+      }
+
+      .contact-surface {
+        position: relative;
+        display: grid;
+        gap: 16px;
+        padding: clamp(18px, 3vw, 28px);
+        overflow: hidden;
+        border: 1px solid rgba(151, 122, 70, 0.35);
+        border-radius: 8px;
+        background:
+          linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(245, 234, 210, 0.82)),
+          var(--paper);
+        box-shadow: 0 34px 90px rgba(37, 29, 15, 0.22);
+      }
+
+      .contact-surface::before {
+        position: absolute;
+        inset-inline: 24px;
+        top: 0;
+        height: 3px;
+        content: "";
+        background: linear-gradient(90deg, var(--clinic-teal), var(--brass), var(--moss));
+      }
+
+      .contact-surface::after {
+        position: absolute;
+        inset-block-start: 40px;
+        inset-inline-start: -46px;
+        width: 190px;
+        height: 190px;
+        content: "";
+        background: url("assets/brand-mark.svg") center / contain no-repeat;
+        opacity: 0.055;
+        pointer-events: none;
+      }
+
+      .contact-surface > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .contact-header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 18px;
+        padding-block-end: 6px;
+      }
+
+      .contact-title {
+        margin: 0;
+        color: var(--ink);
+        font-size: 1.86rem;
+        line-height: 1.2;
+        font-weight: 900;
+      }
+
+      .monogram {
+        width: 58px;
+        height: 58px;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(216, 173, 85, 0.42);
+        border-radius: 50%;
+        color: var(--brass);
+        background:
+          linear-gradient(145deg, rgba(255, 250, 240, 0.14), rgba(216, 173, 85, 0.1)),
+          var(--charcoal);
+        font-size: 1.18rem;
+        font-weight: 950;
+        box-shadow: inset 0 0 0 1px rgba(255, 250, 240, 0.08);
+      }
+
+      .monogram img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+
+      .actions {
+        display: grid;
+        gap: 12px;
+      }
+
+      .action {
+        --accent: var(--brass);
+        position: relative;
+        min-height: 84px;
+        display: grid;
+        grid-template-columns: 58px minmax(0, 1fr) 34px;
+        align-items: center;
+        gap: 16px;
+        padding: 14px 16px;
+        overflow: hidden;
+        border: 1px solid rgba(23, 25, 21, 0.1);
+        border-radius: 8px;
+        color: var(--ink);
+        background:
+          linear-gradient(90deg, rgba(255, 255, 255, 0.92), rgba(255, 250, 240, 0.82)),
+          #fff;
+        text-decoration: none;
+        box-shadow: 0 12px 28px rgba(37, 29, 15, 0.09);
+        transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+      }
+
+      .action::before {
+        position: absolute;
+        inset-block: 0;
+        inset-inline-end: 0;
+        width: 5px;
+        content: "";
+        background: var(--accent);
+      }
+
+      .action:hover,
+      .action:focus-visible {
+        transform: translateY(-3px);
+        border-color: rgba(154, 108, 35, 0.34);
+        box-shadow: 0 20px 44px rgba(37, 29, 15, 0.16);
+      }
+
+      .action:focus-visible,
+      .share-copy:focus-visible {
+        outline: 3px solid rgba(63, 125, 119, 0.38);
+        outline-offset: 3px;
+      }
+
+      .action.primary {
+        min-height: 108px;
+        color: var(--paper);
+        border-color: rgba(216, 173, 85, 0.42);
+        background:
+          linear-gradient(135deg, rgba(216, 173, 85, 0.24), rgba(63, 125, 119, 0.12)),
+          linear-gradient(90deg, #151713, #27291f);
+        box-shadow: 0 22px 54px rgba(18, 140, 84, 0.18), 0 22px 48px rgba(0, 0, 0, 0.22);
+      }
+
+      .action-icon {
+        width: 54px;
+        height: 54px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        color: #fff;
+        background: var(--accent);
+        box-shadow:
+          inset 0 0 0 1px rgba(255, 255, 255, 0.22),
+          0 12px 26px rgba(0, 0, 0, 0.16);
+      }
+
+      .primary .action-icon {
+        width: 58px;
+        height: 58px;
+      }
+
+      .action-icon svg {
+        width: 25px;
+        height: 25px;
+        stroke-width: 2;
+      }
+
+      .action-text {
+        display: grid;
+        gap: 5px;
+        min-width: 0;
+      }
+
+      .action-text strong {
+        color: currentColor;
+        font-size: 1.12rem;
+        line-height: 1.2;
+        font-weight: 900;
+      }
+
+      .primary .action-text strong {
+        font-size: 1.26rem;
+      }
+
+      .action-text span {
+        color: var(--muted);
+        font-size: 0.94rem;
+        line-height: 1.55;
+        overflow-wrap: anywhere;
+      }
+
+      .primary .action-text span {
+        color: rgba(245, 234, 210, 0.76);
+      }
+
+      .action-text span[dir="ltr"] {
+        text-align: right;
+      }
+
+      .action-arrow {
+        width: 34px;
+        height: 34px;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(23, 25, 21, 0.1);
+        border-radius: 50%;
+        color: var(--deep-brass);
+        background: rgba(255, 250, 240, 0.72);
+        font-size: 1rem;
+        line-height: 1;
+      }
+
+      .primary .action-arrow {
+        color: var(--brass);
+        border-color: rgba(216, 173, 85, 0.22);
+        background: rgba(255, 250, 240, 0.07);
+      }
+
+      .whatsapp {
+        --accent: #128c54;
+      }
+
+      .maps {
+        --accent: #2f66c0;
+      }
+
+      .instagram {
+        --accent: #bd3f82;
+      }
+
+      .facebook {
+        --accent: #245fbd;
+      }
+
+      .share-bar {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 10px;
+        align-items: center;
+        padding-block-start: 4px;
+      }
+
+      .share-url {
+        min-width: 0;
+        overflow: hidden;
+        direction: ltr;
+        color: rgba(23, 25, 21, 0.62);
+        text-align: left;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: 0.9rem;
+      }
+
+      .share-copy {
+        min-height: 42px;
+        padding: 0 16px;
+        border: 0;
+        border-radius: 8px;
+        color: var(--paper);
+        background:
+          linear-gradient(90deg, var(--charcoal), #27291f);
+        font: inherit;
+        font-size: 0.92rem;
+        font-weight: 900;
+        cursor: pointer;
+        transition: transform 180ms ease, background-color 180ms ease;
+      }
+
+      .share-copy:hover {
+        transform: translateY(-2px);
+        background: var(--deep-brass);
+      }
+
+      @media (max-width: 920px) {
+        body {
+          background:
+            linear-gradient(180deg, rgba(16, 18, 15, 0.99) 0%, rgba(16, 18, 15, 0.99) 48%, rgba(245, 234, 210, 0.98) 48.1%, rgba(255, 250, 240, 0.98) 100%),
+            var(--night);
+        }
+
+        body::before {
+          background-size: 620px auto, 56px 56px, 56px 56px, 820px auto;
+          background-position: -180px 20%, center, center, 72% 12%;
+          opacity: 0.13;
+        }
+
+        .experience {
+          grid-template-columns: 1fr;
+          gap: 28px;
+          width: min(680px, calc(100% - 28px));
+          padding-block: 28px;
+        }
+
+        .brand-stage,
+        .identity {
+          width: 100%;
+        }
+
+        .brand-stage {
+          max-width: 520px;
+          justify-self: center;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .experience {
+          width: min(100% - 20px, 460px);
+          padding-block: 18px 22px;
+          gap: 22px;
+        }
+
+        .brand-area {
+          gap: 16px;
+        }
+
+        .brand-stage::before {
+          inset: 7px;
+        }
+
+        .brand-stage::after {
+          bottom: 10px;
+        }
+
+        .identity {
+          gap: 8px;
+        }
+
+        h1 {
+          font-size: 2.05rem;
+        }
+
+        .latin-name {
+          font-size: 0.95rem;
+        }
+
+        .specialty {
+          font-size: 0.96rem;
+        }
+
+        .contact-area::before {
+          display: none;
+        }
+
+        .contact-surface {
+          padding: 16px;
+          gap: 14px;
+        }
+
+        .contact-header {
+          grid-template-columns: 1fr auto;
+          gap: 12px;
+        }
+
+        .contact-title {
+          font-size: 1.34rem;
+        }
+
+        .monogram {
+          width: 52px;
+          height: 52px;
+          font-size: 1.08rem;
+        }
+
+        .action,
+        .action.primary {
+          min-height: 78px;
+          grid-template-columns: 50px minmax(0, 1fr) 30px;
+          gap: 12px;
+          padding: 12px;
+        }
+
+        .action-icon,
+        .primary .action-icon {
+          width: 48px;
+          height: 48px;
+        }
+
+        .action-icon svg {
+          width: 22px;
+          height: 22px;
+        }
+
+        .action-text strong,
+        .primary .action-text strong {
+          font-size: 1.06rem;
+        }
+
+        .action-text span {
+          font-size: 0.88rem;
+        }
+
+        .action-arrow {
+          width: 30px;
+          height: 30px;
+        }
+
+        .share-bar {
+          grid-template-columns: 1fr;
+        }
+
+        .share-copy {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 370px) {
+        .experience {
+          width: min(100% - 16px, 360px);
+        }
+
+        h1 {
+          font-size: 1.82rem;
+        }
+
+        .contact-title {
+          font-size: 1.18rem;
+        }
+
+        .action {
+          grid-template-columns: 46px minmax(0, 1fr);
+        }
+
+        .action-arrow {
+          display: none;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="experience">
+      <section class="brand-area" aria-labelledby="clinic-title">
+        <div class="brand-stage">
+          <img
+            class="brand-logo"
+            src="assets/logo-main.jpg"
+            alt="شعار د. عمر أحمد نزال - طب وجراحة الفم والأسنان"
+            width="1200"
+            height="769"
+          >
+        </div>
+
+        <div class="identity">
+          <p class="eyebrow" dir="ltr">Official Clinic Profile</p>
+          <h1 id="clinic-title">د. عمر أحمد نزال</h1>
+          <p class="latin-name">Dr. Omar Ahmad Nazzal</p>
+          <p class="specialty">طب وجراحة الفم والأسنان</p>
+        </div>
+      </section>
+
+      <section class="contact-area" aria-labelledby="links-title">
+        <div class="contact-surface">
+          <header class="contact-header">
+            <h2 class="contact-title" id="links-title">روابط العيادة الرسمية</h2>
+            <div class="monogram" aria-hidden="true">
+              <img src="assets/brand-mark.svg" alt="">
+            </div>
+          </header>
+
+          <nav class="actions" aria-label="روابط التواصل">
+            <a
+              class="action primary whatsapp"
+              href="https://wa.me/message/AEKRNZCFLV37H1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="action-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+                  <path d="M20 11.5a8.4 8.4 0 0 1-12.5 7.3L4 20l1.2-3.4A8.4 8.4 0 1 1 20 11.5Z"></path>
+                  <path d="M8.8 8.3c.2-.5.4-.5.7-.5h.5c.2 0 .5.1.6.4l.7 1.6c.1.3.1.5-.1.7l-.5.6c.8 1.4 1.8 2.3 3.2 3.1l.7-.8c.2-.2.4-.3.7-.2l1.5.7c.3.1.4.4.4.7v.4c0 .4-.2.8-.5 1-1 .5-3.5.2-5.8-2.1-2.4-2.4-2.7-4.9-2.1-5.6Z"></path>
+                </svg>
+              </span>
+              <span class="action-text">
+                <strong>واتساب</strong>
+                <span>للحجز والاستفسارات المباشرة</span>
+              </span>
+              <span class="action-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="action maps"
+              href="https://maps.app.goo.gl/vNwv5cAXQisu1uPbA"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="action-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+                  <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="2.8"></circle>
+                </svg>
+              </span>
+              <span class="action-text">
+                <strong>Google Maps</strong>
+                <span>موقع العيادة والاتجاهات</span>
+              </span>
+              <span class="action-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="action instagram"
+              href="https://www.instagram.com/dromarnazzal"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="action-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+                  <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                  <circle cx="12" cy="12" r="3.6"></circle>
+                  <circle cx="16.7" cy="7.3" r=".8" fill="currentColor" stroke="none"></circle>
+                </svg>
+              </span>
+              <span class="action-text">
+                <strong>Instagram</strong>
+                <span dir="ltr">@dromarnazzal</span>
+              </span>
+              <span class="action-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="action facebook"
+              href="https://www.facebook.com/profile.php?id=100054313700070&amp;mibextid=wwXIfr&amp;rdid=KdWx4glR9wZCuUAS&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18hFEzY93V%2F%3Fmibextid%3DwwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="action-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M13.4 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.2V13H10v8h3.4Z"></path>
+                </svg>
+              </span>
+              <span class="action-text">
+                <strong>Facebook</strong>
+                <span>صفحة د. عمر أحمد نزال</span>
+              </span>
+              <span class="action-arrow" aria-hidden="true">↗</span>
+            </a>
+          </nav>
+
+          <div class="share-bar" aria-live="polite">
+            <span class="share-url" id="pageUrl" dir="ltr">omar-nazzal-clinic</span>
+            <button class="share-copy" id="copyButton" type="button">نسخ رابط الصفحة</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const pageUrl = document.getElementById("pageUrl");
+      const copyButton = document.getElementById("copyButton");
+
+      function currentShareUrl() {
+        return window.location.href.startsWith("file:")
+          ? "ضع الرابط هنا بعد رفع الصفحة"
+          : window.location.href;
+      }
+
+      pageUrl.textContent = currentShareUrl();
+
+      copyButton.addEventListener("click", async () => {
+        const value = currentShareUrl();
+
+        try {
+          await navigator.clipboard.writeText(value);
+          copyButton.textContent = "تم النسخ";
+        } catch (error) {
+          pageUrl.textContent = value;
+          copyButton.textContent = "انسخ الرابط الظاهر";
+        }
+
+        window.setTimeout(() => {
+          copyButton.textContent = "نسخ رابط الصفحة";
+        }, 1800);
+      });
+    </script>
+  </body>
+</html>
